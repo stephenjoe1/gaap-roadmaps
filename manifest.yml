@@ -2,6 +2,6 @@
 applications:
 - name: gaap-roadmaps
   command: npm start
-  memory: 64M
+  memory: 512M
   buildpack: nodejs_buildpack
   instances: 1
