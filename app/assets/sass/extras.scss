@@ -8,6 +8,16 @@
   font-size: 16px;
 }
 
+.list-lined li {
+  border-bottom: 1px solid $border-colour;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.list-lined li a {
+  text-decoration: none;
+}
+
 .phase-discovery {
 border-top: 15px solid #912b88;
 padding-top: 30px;
@@ -28,8 +38,19 @@ border-top: 15px solid #85994b;
 padding-top: 30px;
 }
 
+.component-type {
+border-top: 10px solid #0B0C0C;
+padding-top: 15px;
+margin-bottom: 30px;
+}
+
 
 .section-border-top {
+        margin-top: 60px;
+        border-top: 10px solid #0B0C0C;
+    }
+
+.sub-section-border-top {
         margin-top: 60px;
         border-top: 1px solid $border-colour;
     }
@@ -58,4 +79,10 @@ padding-top: 30px;
 .status.beta:before {
     border-color: #f47738;
 }
+
+.status.discovery:before {
+    border-color: #912b88;
+}
+
+
 
