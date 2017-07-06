@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Transaction list
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+	
+<div class="grid-row">
+
+	<!-- Main body -->
+	<div class="column-two-thirds">
+		<h1 class="heading-xlarge">
+			<span class="heading-secondary">Roadmap overview</span>Gaap components</h1>
+				<p class="lede">Creating a set of shared components that make world class services faster to assemble and cheaper to run.</p>
+
+	</div>
+</div>
+
+
+<div class="grid-row">
+
+  <div class="column-one-quarter"> 
+	  <h2 class="heading-medium component-type">Software</h2>
+	  <ul class="list list-lined">
+		  <li>GOV.UK Verify</li>
+		  <li><a href="#notify">GOV.UK Notify</a></li>
+		  <li><a href="#pay">GOV.UK Pay</a></li>
+		  <li>Secure document exchange</li>
+		</ul>	
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Patterns</h2>
+	<ul class="list list-lined">
+		  <li>GOV.UK Design Patterns</li>
+		  <li>Webchat</li>
+		  <li>Concessionary Travel</li>
+		  <li>Residents’ parking permits</li>
+		  <li>Check before you start</li>
+		</ul>
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Data</h2>
+	<ul class="list list-lined">
+		  <li>Registers</li>
+		  <li>Data.gov.uk</li>
+		  <li>Private data exchange</li>
+		</ul>
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Tools</h2>
+	<ul class="list list-lined">
+		  <li><a href="#paas">GOV.UK Platform as a Service</a></li>
+		  <li><a href="#email-sub">Submit – Forms builder</a></li>
+		  <li>PQs and FOIs</li>
+		  <li>Surveys</li>
+		</ul>
+  </div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+		<h2 class="heading-large"><a name="notify">GOV.UK Notify</h2>
+			<p class="beta status">Public Beta</p>
+			<p>Making it easier to send emails, text messages and letters to your users.</p>
+		</div>
+		<div class="column-one-quarter">
+			<div class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.notifications.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+					<li><a href="#">Detailed roadmap</a></li>
+				</ul>
+			</div>
+		</div>		
+</div>
+<div class="grid-row">
+	<div class="column-full">
+	<h3 class="heading-medium">Roadmap</h3>
+		<ul class="tabs">
+		    <li><a href="component-overview-simple">Simple view</a></li>
+		    <li class="current"><a href="component-overview-detailed">Detailed view</a></li>
+		</ul>
+	</div>
+	{% include "includes/detailed-roadmap-1.html" %}
+</div>
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="sub-section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="pay">GOV.UK Pay</h2>
+				<p class="beta status">Private Beta</p>
+				<p>GOV.UK Pay is a secure payment service that is easy to integrate with and designed to meet the Digital Service Standard. Give your users a trusted GOV.UK-branded payment experience.</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.payments.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+					<li><a href="#">Detailed roadmap</a></li>
+				</ul>
+			</div>
+		</div>
+</div>
+
+{% include "includes/simple-roadmap-1.html" %}
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="sub-section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="email-sub">Email Subscriptions</h2>
+			<p class="discovery status">Discovery</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+{% include "includes/simple-roadmap-1.html" %}
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="paas">GOV.UK Platform as a Service</h2>
+			<p class="beta status">Private Beta</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.cloud.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+{% include "includes/simple-roadmap-1.html" %}
+
+
+</main>
+
+{% endblock %}

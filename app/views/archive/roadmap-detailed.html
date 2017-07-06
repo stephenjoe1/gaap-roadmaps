@@ -1,0 +1,394 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Transaction list
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+	
+<div class="grid-row">
+
+	<!-- Main body -->
+	<div class="column-two-thirds">
+		<h1 class="heading-xlarge">
+			<span class="heading-secondary">Overview</span>GaaP Components</h1>
+				<p class="lede">Creating a set of shared components that make world class services faster to assemble and cheaper to run.</p>
+
+	</div>
+</div>
+
+
+<div class="grid-row">
+
+  <div class="column-one-quarter"> 
+	  <h2 class="heading-medium component-type">Software</h2>
+	  <ul class="list list-lined">
+		  <li>GOV.UK Verify</li>
+		  <li><a href="#notify">GOV.UK Notify</a></li>
+		  <li><a href="#pay">GOV.UK Pay</a></li>
+		  <li>Secure document exchange</li>
+		</ul>	
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Patterns</h2>
+	<ul class="list list-lined">
+		  <li>GOV.UK Design Patterns</li>
+		  <li>Webchat</li>
+		  <li>Concessionary Travel</li>
+		  <li>Residents’ parking permits</li>
+		  <li>Check before you start</li>
+		</ul>
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Data</h2>
+	<ul class="list list-lined">
+		  <li>Registers</li>
+		  <li>Data.gov.uk</li>
+		  <li>Private data exchange</li>
+		</ul>
+  </div>
+  <div class="column-one-quarter">
+	  <h2 class="heading-medium component-type">Tools</h2>
+	<ul class="list list-lined">
+		  <li><a href="#paas">GOV.UK Platform as a Service</a></li>
+		  <li><a href="#email-sub">Submit – Forms builder</a></li>
+		  <li>PQs and FOIs</li>
+		  <li>Surveys</li>
+		</ul>
+  </div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+		<h2 class="heading-large"><a name="notify">GOV.UK Notify</h2>
+			<p class="beta status">Public Beta</p>
+			<p>Making it easier to send emails, text messages and letters to your users.</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.notifications.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+		<h3 class="heading-medium">Roadmap</h3>
+	</div>
+	<div class="column-one-quarter">
+		<h4 class="heading-medium less-margin-top">Q1 2017</h4>
+	</div>
+	<div class="column-three-quarters">
+	<table class="roadmap-table">
+	  <thead>
+	    <tr> 
+	      <th scope="col" class="first-column">Feature</th>
+	      <th >Detail</th>
+	      <th >Status</th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <tr>
+	      <td scope="row">Searching templates</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Sending letters (invite only)</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages. Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Sending text messages to international numbers</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Supporting replies to text messages (invite only)</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>not started</td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+</div>
+
+
+<div class="grid-row">
+	<div class="column-one-quarter">
+		<h4 class="heading-medium less-margin-top">Q2 2017</h4>
+	</div>
+	<div class="column-three-quarters">
+	<table class="roadmap-table">
+	  <thead>
+	    <tr> 
+	      <th scope="col" class="first-column"></th>
+	      <th ></th>
+	      <th ></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <tr>
+	      <td scope="row">Searching templates</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Sending letters (invite only)</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages. Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Sending text messages to international numbers</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>In progress</td>
+	    </tr>
+	    <tr>
+	      <td scope="row">Supporting replies to text messages (invite only)</td>
+	      <td>Upload a spreadsheet of email addresses or phone numbers and Notify sends the messages.</td>
+	      <td>not started</td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+</div>
+
+
+
+
+	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q1 2017</h3>
+    	<ul class="list list-bullet">
+		  <li>Searching templates</li>
+		  <li>Sending letters (invite only)</li>
+		  <li>Sending text messages to international numbers</li>
+		  <li>Supporting replies to text messages (invite only)</li>
+			<li>Retiring version of the API</li>
+		</ul>
+	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q2 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Sending individual messages via Notify interface</li>
+			<li>Restricting notifications to sociable hours</li>
+			<li>Searching for notifications by phone number or email address</li>
+			<li>Sending letters (available for everyone)</li>
+			<li>Distributing delivery of notifications over a period of time</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q3 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Sending of pre-compiled text messages and emails</li>
+			<li>Checking mobile numbers are valid before sending</li>
+			<li>Providing non-mobile phone 2-factor authentication</li>
+			<li>Sending letters through the API</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q4 2018</h3>
+    	<ul class="list list-bullet">
+			<li>Sending of pre-compiled letters</li>
+			<li>Allowing people to request to join a service</li>
+			<li>Publishing design patterns for integration</li>
+		</ul>
+  	</div>
+
+</div>
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="sub-section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="pay">GOV.UK Pay</h2>
+				<p>GOV.UK Pay is a secure payment service that is easy to integrate with and designed to meet the Digital Service Standard. Give your users a trusted GOV.UK-branded payment experience.</p>
+			<p class="beta status">Private Beta</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.payments.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+		<h3 class="heading-medium">High level roadmap</h3>
+	</div>
+	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q1 2017</h3>
+    	<ul class="list list-bullet">
+		  <li>Searching templates</li>
+		  <li>Sending letters (invite only)</li>
+		  <li>Sending text messages to international numbers</li>
+		  <li>Providing non-mobile phone 2-factor authentication</li>
+		  <li>Sending letters through the API</li>
+		  <li>Customising the expiry time for text messages</li>
+		</ul>
+	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q2 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Supporting replies to text messages (invite only)</li>
+			<li>Retiring version of the API</li>
+			<li>Sending individual messages via Notify interface</li>
+			<li>Restricting notifications to sociable hours</li>
+			<li>Searching for notifications by phone number or email address</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q3 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Sending letters (available for everyone)</li>
+			<li>Distributing delivery of notifications over a period of time</li>
+			<li>Allowing multiple sender names and reply-to addresses</li>
+			<li>Sending of pre-compiled text messages and emails</li>
+			<li>Checking mobile numbers are valid before sending</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q4 2018</h3>
+    	<ul class="list list-bullet">
+			<li>Sending of pre-compiled letters</li>
+			<li>Allowing people to request to join a service</li>
+			<li>Publishing design patterns for integration</li>
+		</ul>
+  	</div>
+
+</div>
+
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="sub-section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="email-sub">Email Subscriptions</h2>
+			<p class="discovery status">Discovery</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+		<h3 class="heading-medium">High level roadmap</h3>
+	</div>
+		<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q1 2017</h3>
+    	<ul class="list list-bullet">
+		  <li>Searching templates</li>
+		  <li>Sending letters (invite only)</li>
+		  <li>Sending text messages to international numbers</li>
+		  <li>Supporting replies to text messages (invite only)</li>
+		  <li>Retiring version of the API</li>
+		</ul>
+	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q2 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Sending individual messages via Notify interface</li>
+			<li>Restricting notifications to sociable hours</li>
+			<li>Searching for notifications by phone number or email address</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q3 2017</h3>
+    	<ul class="list">
+			<li>n/a</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q4 2018</h3>
+    	<ul class="list">
+			<li>n/a</li>
+		</ul>
+  	</div>
+
+</div>
+
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+      </div>
+		<div class="column-three-quarters">
+			<h2 class="heading-large"><a name="paas">GOV.UK Platform as a Service</h2>
+			<p class="beta status">Private Beta</p>
+		</div>
+		<div class="column-one-quarter">
+			<div <a class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.cloud.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+			</div>
+		</div>
+</div>
+
+<div class="grid-row">
+	<div class="column-full">
+		<h3 class="heading-medium">High level roadmap</h3>
+	</div>
+	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q1 2017</h3>
+    	<ul class="list list-bullet">
+		  <li>Searching templates</li>
+		  <li>Sending letters (invite only)</li>
+		  <li>Sending text messages to international numbers</li>
+		</ul>
+	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q2 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Supporting replies to text messages (invite only)</li>
+			<li>Retiring version of the API</li>
+			<li>Sending individual messages via Notify interface</li>
+			<li>Restricting notifications to sociable hours</li>
+			<li>Searching for notifications by phone number or email address</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q3 2017</h3>
+    	<ul class="list list-bullet">
+			<li>Sending letters (available for everyone)</li>
+			<li>Distributing delivery of notifications over a period of time</li>
+			<li>Allowing multiple sender names and reply-to addresses</li>
+			<li>Sending of pre-compiled text messages and emails</li>
+		</ul>
+  	</div>
+  	<div class="column-one-quarter">
+    	<h3 class="heading-medium">Q4 2018</h3>
+    	<ul class="list list-bullet">
+			<li>Sending of pre-compiled letters</li>
+			<li>Allowing people to request to join a service</li>
+			<li>Publishing design patterns for integration</li>
+		</ul>
+  	</div>
+
+</div>
+
+</main>
+
+{% endblock %}

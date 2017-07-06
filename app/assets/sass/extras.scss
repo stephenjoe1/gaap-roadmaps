@@ -4,6 +4,24 @@
   @include grid-column(3 / 4);
 }
 
+.roadmap-table td {
+  font-size :16px;
+}
+
+.first-column {
+  width: 25%;
+}
+
+.less-margin-top {
+  margin-top: 30px;
+}
+
+.view-roadmap a {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
 .list-bullet {
   font-size: 16px;
 }
@@ -12,6 +30,7 @@
   border-bottom: 1px solid $border-colour;
   padding-bottom: 10px;
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .list-lined li a {
@@ -39,7 +58,7 @@ padding-top: 30px;
 }
 
 .component-type {
-border-top: 10px solid #0B0C0C;
+// border-top: 10px solid #0B0C0C;
 padding-top: 15px;
 margin-bottom: 30px;
 }
@@ -47,7 +66,7 @@ margin-bottom: 30px;
 
 .section-border-top {
         margin-top: 60px;
-        border-top: 10px solid #0B0C0C;
+        border-top: 1px solid $border-colour;
     }
 
 .sub-section-border-top {
@@ -83,6 +102,50 @@ margin-bottom: 30px;
 .status.discovery:before {
     border-color: #912b88;
 }
+
+
+// Tabs on index page
+
+ul.tabs {
+  padding: 0px;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.tabs a, .tabs a:visited, .tabs a:hover, .tabs a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.tabs li {
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 10px 40px;
+  background: none;
+  color: #005ea5;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+
+ul.tabs li.current {
+  color: black;
+  border: 1px solid #ccc;
+  border-bottom: hidden;
+  background-color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+//ends
 
 
 

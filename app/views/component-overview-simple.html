@@ -1,0 +1,188 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Transaction list
+{% endblock %}
+
+{% block body_end %}
+
+	{{ super() }}
+
+	<script type="text/javascript">
+
+		
+		$('.tabs a').on('click', function(e){
+			var $this = $(this)
+			e.preventDefault()
+			var targetId = $this.data('target')
+			$('.tab-content').hide()
+			$('#' + targetId).show()
+			$this.closest('.tabs').find('li').removeClass('current')
+			$this.closest('li').addClass('current')
+		})
+
+	</script>
+
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+	
+<div class="grid-row">
+
+	<!-- Main body -->
+	<div class="column-two-thirds">
+		<h1 class="heading-xlarge">
+			<span class="heading-secondary">Government as a Platform</span>Component roadmaps</h1>
+				<p class="lede">Technologies, patterns and tools designed to help you quickly build and run world class government services.</p>
+
+	</div>
+</div>
+
+<div class="grid-row">
+  <div class="column-half"> 
+	  <ul class="list list-lined">
+		  <li><a href="#">GOV.UK Verify</li>
+		  <li><a href="#notify">GOV.UK Notify</a></li>
+		  <li><a href="#pay">GOV.UK Pay</a></li>
+		  <li><a href="#">Secure document exchange</li>
+		</ul>	
+  </div>
+  <div class="column-half"> 
+	  <ul class="list list-lined">
+		  <li><a href="#email-sub">Submit – forms builder</a></li>
+		  <li><a href="#">GOV.UK Registers</li>
+		  <li><a href="#">Private data exchange</li>
+		  <li><a href="#paas">GOV.UK Platform as a Service</a></li>
+		</ul>	
+  </div>
+</div>
+
+
+
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+     </div>
+	<div class="column-three-quarters">
+		<h2 class="heading-large"><a name="notify">GOV.UK Notify</h2>
+			<p class="beta status">Public Beta</p>
+			<p>Keep your users updated with emails, text messages and letters, cheaply and easily.</p>
+	</div>
+	<div class="column-one-quarter">
+			<div class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.notifications.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+				</ul>
+			</div>
+	</div>		
+</div>
+<div class="grid-row">
+	<div class="column-full">
+		<ul class="tabs">
+		    <li class="current">
+		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    </li>
+		    <li>
+		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    </li>
+		</ul>
+	</div>
+	<div class="tab-content" id="simple-view" style="display: block;">
+		{% include "includes/simple-roadmap-1.html" %}
+	</div>
+	<div class="tab-content" id="detailed-view">
+		{% include "includes/detailed-roadmap-1.html" %}
+	</div>
+</div>
+
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+     </div>
+	<div class="column-three-quarters">
+		<h2 class="heading-large"><a name="pay">GOV.UK Pay</h2>
+			<p class="beta status">Private Beta</p>
+			<p>Take and process payments - a simple experience for users and easy integration for you.</p>
+	</div>
+	<div class="column-one-quarter">
+			<div class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.notifications.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+				</ul>
+			</div>
+	</div>		
+</div>
+<div class="grid-row">
+	<div class="column-full">
+		<ul class="tabs">
+		    <li class="current">
+		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    </li>
+		    <li>
+		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    </li>
+		</ul>
+	</div>
+	<div class="tab-content" id="simple-view" style="display: block;">
+		{% include "includes/simple-roadmap-1.html" %}
+	</div>
+	<div class="tab-content" id="detailed-view">
+		{% include "includes/detailed-roadmap-1.html" %}
+	</div>
+</div>
+
+
+<div class="grid-row">
+	<div class="column-full">
+        <div class="section-border-top">
+        </div>
+     </div>
+	<div class="column-three-quarters">
+		<h2 class="heading-large"><a name="paas">GOV.UK Platform as a Service</h2>
+			<p class="beta status">Private Beta</p>
+			<p>Host your service on a government cloud platform without having to build and manage your own infrastructure.</p>
+	</div>
+	<div class="column-one-quarter">
+			<div class="product-overview-link">
+				<ul class="list">
+					<li><a href="https://www.notifications.service.gov.uk/">Product overview</a></li>
+					<li><a href="https://governmentasaplatform.blog.gov.uk/2017/03/10/what-were-working-on/">Recent updates</a></li>
+				</ul>
+			</div>
+	</div>		
+</div>
+<div class="grid-row">
+	<div class="column-full">
+		<ul class="tabs">
+		    <li class="current">
+		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    </li>
+		    <li>
+		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    </li>
+		</ul>
+	</div>
+	<div class="tab-content" id="simple-view" style="display: block;">
+		{% include "includes/simple-roadmap-1.html" %}
+	</div>
+	<div class="tab-content" id="detailed-view">
+		{% include "includes/detailed-roadmap-1.html" %}
+	</div>
+</div>
+
+
+
+
+
+</main>
+
+{% endblock %}
