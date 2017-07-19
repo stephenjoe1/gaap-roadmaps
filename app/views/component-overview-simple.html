@@ -10,12 +10,11 @@
 
 	<script type="text/javascript">
 
-		
 		$('.tabs a').on('click', function(e){
 			var $this = $(this)
 			e.preventDefault()
 			var targetId = $this.data('target')
-			$('.tab-content').hide()
+			$this.closest('.tabs-wrap').find('.tab-content').hide()
 			$('#' + targetId).show()
 			$this.closest('.tabs').find('li').removeClass('current')
 			$this.closest('li').addClass('current')
@@ -81,21 +80,21 @@
 			</div>
 	</div>		
 </div>
-<div class="grid-row">
+<div class="grid-row tabs-wrap">
 	<div class="column-full">
 		<ul class="tabs">
 		    <li class="current">
-		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    	<a href="component-overview-simple" data-target="simple-view-notify">Simple roadmap view</a>
 		    </li>
 		    <li>
-		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    	<a href="component-overview-detailed" data-target="detailed-view-notify">Detailed roadmap view</a>
 		    </li>
 		</ul>
 	</div>
-	<div class="tab-content" id="simple-view" style="display: block;">
+	<div class="tab-content" id="simple-view-notify" style="display: block;">
 		{% include "includes/simple-roadmap-1.html" %}
 	</div>
-	<div class="tab-content" id="detailed-view">
+	<div class="tab-content" id="detailed-view-notify">
 		{% include "includes/detailed-roadmap-1.html" %}
 	</div>
 </div>
@@ -121,21 +120,21 @@
 			</div>
 	</div>		
 </div>
-<div class="grid-row">
+<div class="grid-row tabs-wrap">
 	<div class="column-full">
 		<ul class="tabs">
 		    <li class="current">
-		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    	<a href="component-overview-simple" data-target="simple-view-pay">Simple roadmap view</a>
 		    </li>
 		    <li>
-		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    	<a href="component-overview-detailed" data-target="detailed-view-pay">Detailed roadmap view</a>
 		    </li>
 		</ul>
 	</div>
-	<div class="tab-content" id="simple-view" style="display: block;">
+	<div class="tab-content" id="simple-view-pay" style="display: block;">
 		{% include "includes/simple-roadmap-1.html" %}
 	</div>
-	<div class="tab-content" id="detailed-view">
+	<div class="tab-content" id="detailed-view-pay">
 		{% include "includes/detailed-roadmap-1.html" %}
 	</div>
 </div>
@@ -160,21 +159,21 @@
 			</div>
 	</div>		
 </div>
-<div class="grid-row">
+<div class="grid-row tabs-wrap">
 	<div class="column-full">
 		<ul class="tabs">
 		    <li class="current">
-		    	<a href="component-overview-simple" data-target="simple-view">Simple roadmap view</a>
+		    	<a href="component-overview-simple" data-target="simple-view-paas">Simple roadmap view</a>
 		    </li>
 		    <li>
-		    	<a href="component-overview-detailed" data-target="detailed-view">Detailed roadmap view</a>
+		    	<a href="component-overview-detailed" data-target="detailed-view-paas">Detailed roadmap view</a>
 		    </li>
 		</ul>
 	</div>
-	<div class="tab-content" id="simple-view" style="display: block;">
+	<div class="tab-content" id="simple-view-paas" style="display: block;">
 		{% include "includes/simple-roadmap-1.html" %}
 	</div>
-	<div class="tab-content" id="detailed-view">
+	<div class="tab-content" id="detailed-view-paas">
 		{% include "includes/detailed-roadmap-1.html" %}
 	</div>
 </div>
