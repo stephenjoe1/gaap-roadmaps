@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Transaction list
+{% endblock %}
+
+{% block body_end %}
+
+	{{ super() }}
+
+	<script type="text/javascript">
+
+		$('.tabs a').on('click', function(e){
+			var $this = $(this)
+			e.preventDefault()
+			var targetId = $this.data('target')
+			$this.closest('.tabs-wrap').find('.tab-content').hide()
+			$('#' + targetId).show()
+			$this.closest('.tabs').find('li').removeClass('current')
+			$this.closest('li').addClass('current')
+		})
+
+	</script>
+
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+	
+<div class="grid-row">
+
+	<!-- Main body -->
+	<div class="column-two-thirds">
+		<h1 class="heading-large">Assemble, deploy and run services using common government platforms</h1>
+				<!-- <p class="lede">Assemble, deploy and run services using common platforms</p> -->
+
+	</div>
+</div>
+
+<div class="grid-row">
+  <div class="column-half">
+  	<h2 class="heading-medium">Services and components</h2> 
+	  	<h3 class="heading-small"><a href="#notify">GOV.UK Notify</a></h3>
+	  	<p>Keep your users up to date with emails, text messages and letters</p>
+	  	<h3 class="heading-small"><a href="#notify">GOV.UK Pay</a></h3>
+		<p>A secure payment service that is easy to integrate and designed to meet the Digital Service Standards</p>
+		<h3 class="heading-small"><a href="#notify">GOV.UK Registers</a></h3>
+		<p>Get access to current and reliable data to build your services</p>
+		<!-- <h3 class="heading-small"><a href="#notify">GOV.UK Submit</a></h3>
+		<p>A service to transform the way you collect information from users</p> -->
+		<h3 class="heading-small"><a href="#notify">GOV.UK Verify</a></h3>
+		<p>Allow users to prove their identity online, so you can be sure that people accessing your service are who they say they are</p>
+		<h3 class="heading-small"><a href="#notify">Personal Data Exchange</a></h3>
+		<p>Check if users are eligible to access and request your service</p>
+	</div>
+<div class="column-half">
+		<h2 class="heading-medium">Infrastructure</h2> 
+		<h3 class="heading-small"><a href="#notify">GOV.UK Platform as a Service</a></h3>
+		<p>Deploy and host applications without having to build and manage your own infrastructure</p>
+		<h3 class="heading-small"><a href="#notify">GOV.UK Prototype as a Service</a></h3>
+		<p>Build, deploy and run your alpha service and pay only for what you use</p>
+		<h3 class="heading-small"><a href="#notify">Storage and DB</a></h3>
+		<p>Store and access your data on government compliant infrastructure</p>	
+  </div>
+</div>
+
+
+<div class="grid-row">
+	<div class="column-full">
+      <div class="section-border-top">
+      </div>
+    </div>
+
+
+  <div class="column-half">
+	  <h2 class="heading-medium">Funding</h2>
+	  	<p>We build and run common technology so that government services can focus on what’s unique for their users. <a href="">Read out principles and how we fund and support this technology</a>.</p> 
+	  <h2 class="heading-medium">Roadmaps</h2>
+	  	<p>Check what GOV.UK Platform has in store for <a href="">the coming year</a>. Have you developed some technology that could be reused across government? <a href="">Get in touch</a></p> 		
+  </div>
+  <div class="column-half">
+         <div class="team-image">
+              <img src="/public/images/service-team.jpg">
+         </div>
+    </div>
+</div>
+
+ <div class="grid-row">
+    <div class="column-full">
+      <div class="section-border-top">
+      </div>
+    </div>
+
+    <div class="column-half">
+      <h2 class="heading-medium" id="6">Service stories</h2>
+        <p><a href="#">How DVSA saved money using Notify</a></p>
+        <p><a href="#">Verify: no more in-person signatures for mortgage borrowers</a></p>
+        <p><a href="#">GOV.UK moves to PaaS and reduces downtime</a></p>
+        <p><a href="#">MoJ service saves 3p per transaction with Pay</a></p>
+
+    </div>
+    <div class="column-half">
+  		<h2 class="heading-medium">Case studies</h2>
+  			<p><a href="#">DVSA and GOV.UK Notify</a></p>
+        	<p><a href="#">Department for International Trade and GOV.UK PaaS</a></p>
+        	<p><a href="#">MoJ and GOV.UK Pay</a></p>	
+  </div>
+
+        
+   </div>
+
+
+
+
+</main>
+
+{% endblock %}

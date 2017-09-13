@@ -1,5 +1,55 @@
 @import 'govuk-elements';
 
+.product-name {
+  font-weight: 400;
+  padding-left: 5px;
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -15px;
+}
+
+.product-name a {
+  color: white;
+ text-decoration: none;
+}
+
+.product-name a:hover {
+ text-decoration: underline;
+}
+
+#global-header.with-proposition .header-wrapper .header-global .header-logo {
+  display: inline-block;
+    width: 190px;
+}
+
+
+#global-header .full-width,
+#global-header-bar.full-width{
+  max-width: 100%;
+}
+
+#global-header .header-proposition #proposition-links.right-aligned {
+  li{
+    float: right;
+      padding: 0 0 0 15px;
+  }
+}
+
+
+#global-header-bar {
+  max-width: 960px;
+}
+
+#global-header .header-wrapper {
+  max-width: 990px;
+}
+
+
+
+
 .column-three-quarters {
   @include grid-column(3 / 4);
 }
@@ -143,6 +193,39 @@ ul.tabs li.current {
 
 .tab-content.current {
   display: inherit;
+}
+
+//section rule separators
+
+    .section-border-top {
+        margin-top: 30px;
+        border-top: 1px solid $border-colour;
+    }
+
+// Images on Product Page
+
+img .img_org-logos {
+  width: 100%;
+  max-width: 760px;
+}
+
+.diagram-image {
+    width: 100%;
+}
+
+.diagram-image img {
+    width: 100%;
+}
+
+.team-image img {
+    width: 100%;
+    float: right;
+    margin: 45px 0 0 $gutter;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      margin: 0 0 $gutter/2 0;
+    }
 }
 
 //ends
