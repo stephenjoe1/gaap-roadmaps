@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "govuk-pay.html" %}
 
 {% block page_title %}
   Transaction list
@@ -6,37 +6,44 @@
 
 {% block body_end %}
 
-	{{ super() }}
-
-	<script type="text/javascript">
-
-		$('.tabs a').on('click', function(e){
-			var $this = $(this)
-			e.preventDefault()
-			var targetId = $this.data('target')
-			$this.closest('.tabs-wrap').find('.tab-content').hide()
-			$('#' + targetId).show()
-			$this.closest('.tabs').find('li').removeClass('current')
-			$this.closest('li').addClass('current')
-		})
-
-	</script>
 
 {% endblock %}
 
 {% block content %}
-<main id="content" role="main">
-	
-<div class="grid-row">
 
-	<!-- Main body -->
-	<div class="column-two-thirds">
-		<h1 class="heading-large">Assemble, deploy and run services using common government platforms</h1>
-				<!-- <p class="lede">Assemble, deploy and run services using common platforms</p> -->
 
-	</div>
+<div class="product-overview-intro">
+  <div class="wrapper">
+    <div class="grid-row">
+
+
+      <div class="column-full">
+        <div class="breadcrumbs">
+          <ol>
+            <li>
+                <a href="../govuk-service-manual/index#govuk-products">Service Toolkit</a>
+            </li>
+            <li class="active">
+                GOV.UK&nbsp;Platform
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">Assemble, deploy and run services using common government platforms</h1>
+
+      </div>
+      <div class="column-one-third product-overview-intro-image">
+        <img class= "top-image" src="/public/images/pay-top-image.png" alt"">
+      </div>
+    </div>
+  </div>
 </div>
 
+
+<main id="content" role="main">
 <div class="grid-row">
   <div class="column-half">
   	<h2 class="heading-medium">Services and components</h2> 
